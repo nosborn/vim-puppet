@@ -108,6 +108,7 @@ syn region  puppetRegexComment     start="(?#" skip="\\)" end=")" contained
 syn match   puppetComment            "\s*#.*$" contains=puppetTodo,@Spell
 syn region  puppetMultilineComment  start="/\*" end="\*/" contains=puppetTodo,@Spell
 syn keyword puppetTodo               TODO NOTE FIXME XXX BUG HACK contained
+syn keyword puppetTodo               TODO: NOTE: FIXME: XXX: BUG: HACK: contained
 
 " Define the default highlighting.
 " For version 5.7 and earlier: only when not done already
